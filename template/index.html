@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Cabot Cruises</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya:400,800" rel="stylesheet">
+</head>
+
+<body onresize="resize()">
+	<header>
+		<div class="head">
+			<img src="img/logo100.png" alt="logo" srcset="img/logo100.png 1x, img/logo200.png 2x, img/logo300.png 3x," />
+			<h1>Cabot Cruises</h1>
+			<h2>Take A Trip On A Boat</h2>
+			<a id="phone" href="tel:999-999-9999">999-999-9999</a>
+		</div>
+	</header>
+	<nav class="clearfix">
+		<div class="topnav" id="myTopnav">
+			<i class="fa fa-bars" aria-hidden="true" onclick="test()"></i>
+			<ul class="" id="thisNav">
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="#">Cruises</a></li>
+				<li><a href="#">Agents</a>
+					<ul class="subNav">
+						<li>
+							<a href="">Test McGee</a>
+							<a href="">McGee Test</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Book</a></li>
+			</ul>
+
+			<div class="search-container">
+				<input type="search" placeholder="Search..">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</div>
+
+		</div>
+	</nav>
+	<main class="clearfix">
+		<div class="mySlider lead">
+			<picture>
+				<source srcset="img/1-1200.jpg" media="(min-width: 29.25rem)">
+				<img src="img/1-350.jpg" alt="">
+			</picture>
+
+			<picture>
+				<source srcset="img/2-1200.jpg" media="(min-width: 29.25rem)">
+				<img src="img/2-350.jpg" alt="">
+			</picture>
+			<picture>
+				<source srcset="img/3-1200.jpg" media="(min-width: 29.25rem)">
+				<img src="img/3-350.jpg" alt="">
+			</picture>
+			<picture>
+				<source srcset="img/4-1200.jpg" media="(min-width: 29.25rem)">
+				<img src="img/4-350.jpg" alt="">
+			</picture>
+		</div> <!-- End Slide -->
+
+		<h2>Recent Blog Articles</h2>
+		<div id="blog-container">
+			<div class="teaser">
+				<a href="#">
+					<img src="img/hotel.jpg" alt="hotel">
+					<span>Top 10 Best Hotel Rooms</span>
+					<p>Date</p>
+				</a>
+			</div>
+
+			<div class="teaser">
+				<a href="#">
+					<img src="img/rest.jpg" alt="restaurant">
+					<span>7 Places You Cant Miss Eating At</span>
+					<p>Date</p>
+				</a>
+			</div>
+
+			<div class="teaser">
+				<a href="#">
+					<img src="img/see.jpg" alt="city center">
+					<span>13 Sites You Wont Believe</span>
+					<p>Date</p>
+				</a>
+			</div>
+
+			<div class="teaser">
+				<a href="#">
+					<img src="img/do.jpg" alt="festival">
+					<span>31 Incredible Sites</span>
+					<p>Date</p>
+				</a>
+			</div>
+		</div>
+
+		<div id="contactFoot">
+			<div id="contact">
+				<h2>Contact Us</h2>
+				<p>Cabot Cruises</p>
+				<a href="https://www.google.com/maps/dir/''/white+house+address/data=!4m5!4m4!1m0!1m2!1m1!1s0x89b7b7bcdecbb1df:0x715969d86d0b76bf?sa=X&ved=2ahUKEwiduOiKppjdAhXIc98KHU9mDFUQ9RcwIXoECAYQEQ">
+					<p>1600 Pennsylvania Ave NW</p>
+					<p>Washington, DC 20500</p>
+				</a>
+				<h2>Phone</h2>
+				<a id="phone" href="tel:999-999-9999">999-999-9999</a>
+				<h2>Hours of Operation</h2>
+				<p>Monday-Friday 9am-4pm</p>
+			</div>
+			<div id="newsLetter">
+				<h2>Newsletter</h2>
+				<p>Subscribe to our email list and stay up-to-date with our hottest offers and latest specials.</p>
+				<form>
+					<input type="text" required placeholder="Email" name="email">
+					<input type="submit" value="submit" name="submit">
+				</form>
+			</div>
+			<div id="why">
+				<h2>Why Cabot Cruises</h2>
+				<p>Cabot Cruises is a travel agency providing the best cruise deals on our online travel website. We can help you
+					with all inclusive vacaMons including discounted cruises.</p>
+			</div>
+
+		</div>
+
+		<div id="social">
+			<div class="soc"><i class="fa fa-facebook-official" aria-hidden="true"></i></div>
+			<div class="soc"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+			<div class="soc"><i class="fa fa-youtube" aria-hidden="true"></i></div>
+			<div class="soc"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+			<div class="soc"><i class="fa fa-pinterest-p" aria-hidden="true"></i></div>
+
+		</div>
+
+	</main>
+	<footer>
+		<p>&copy; Rider Jensen Creations 2018 | <a href="http://www.riderjensen.com" target="_blank">riderejensen.com</a> |
+			<a href="#">Login</a>
+			Login </p>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	    crossorigin="anonymous"></script>
+	<script src="slick/slick.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.mySlider').slick({
+				autoplay: true,
+				dots: true,
+				arrows: false,
+				cssEase: 'ease-out',
+				speed: 2000,
+				autoplaySpeed: 10000
+			});
+		});
+	</script>
+	<script src="js/main.js"></script>
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "TravelAgency",
+			"name": "Cabot Cruises",
+			"description": "Cabot Cruises is a travel agency providing the best cruise deals on our online travel website.",
+			"openingHours": "Mo-Fr 09:00-16:00",
+			"telephone": "+19999999999",
+			"faxNumber": "+19999999999",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "1600 Pennsylvania Ave NW",
+				"addressLocality": "Washington",
+				"addressRegion": "D.C."
+			},
+			"image": "http://riderjensen.com/dgm3740/template/img/logo100.png",
+			"priceRange": "$500 to $4000"
+		}
+	</script>
+</body>
+
+</html>
