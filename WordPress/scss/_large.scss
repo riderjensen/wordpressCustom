@@ -1,0 +1,74 @@
+nav {
+	a:last-child {
+		border-left: 1px solid rgba(0, 0, 0, 0.3);
+	}
+}
+
+/*  main  */
+main {
+	div.teaser {
+		width: 25%;
+	}
+
+	.cruiseContainer {
+		width: 100%;
+
+		img {
+			width: 20%;
+			display: inline-block;
+		}
+
+		.info-container {
+			width: 79%;
+			display: inline-block;
+
+			button {
+				float: right;
+				background-color: $secondary-color;
+			}
+		}
+	}
+
+	.agentInfo {
+		img {
+			width: 33%;
+		}
+	}
+
+	form {
+		input {
+			width: 25%;
+		}
+	}
+
+	.aboutUs {
+		width: 100%;
+
+		.contains {
+			width: 33%;
+		}
+	}
+}
+
+.gallery {
+	figure {
+		width: 24%;
+	}
+}
+
+iframe {
+	width: 50%;
+	height: 500px;
+}
+
+#contact {
+	width: 33%;
+}
+
+#newsLetter {
+	width: 33%;
+}
+
+#why {
+	width: 33%;
+}

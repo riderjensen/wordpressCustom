@@ -1,0 +1,118 @@
+nav {
+	div {
+		a {
+			border-right: 1px solid rgba(0, 0, 0, 0.3);
+			float: left;
+		}
+	}
+
+	.search-container {
+		margin-top: 10px;
+		float: right;
+		width: 250px;
+
+		input {
+			width: 80%;
+		}
+
+		button {
+			padding: 5px;
+			float: right;
+			width: 45px;
+		}
+	}
+
+	i.fa-bars {
+		display: none;
+	}
+
+	ul#thisNav {
+		float: none;
+		width: 500px;
+
+		li {
+			width: 20%;
+			float: left;
+
+			a {
+				width: 100%;
+			}
+
+			ul.subNav {
+				display: none;
+				float: none;
+
+				li {
+					float: none;
+					display: block;
+					position: absolute;
+					background-color: darken($primary-color, 10%);
+					min-width: 160px;
+					box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+					padding: 12px 16px;
+					z-index: 1;
+				}
+			}
+		}
+
+		li:hover {
+			ul.subNav {
+				display: block;
+			}
+		}
+	}
+}
+
+/*  main  */
+main {
+	div.teaser {
+		width: 33%;
+	}
+
+	div.lead {
+		height: 310px;
+	}
+
+	.cruiseContainer {
+		width: 100%;
+
+		img {
+			width: 33%;
+			display: inline-block;
+		}
+
+		.info-container {
+			width: 66%;
+			display: inline-block;
+
+			button {
+				float: right;
+				background-color: $secondary-color;
+			}
+		}
+	}
+
+	.agentInfo {
+		img {
+			width: 50%;
+		}
+	}
+
+	.bookCruise {
+		input {
+			width: 50%;
+		}
+	}
+}
+
+#contact {
+	width: 50%;
+}
+
+#newsLetter {
+	width: 50%;
+}
+
+#why {
+	width: 100%;
+}
