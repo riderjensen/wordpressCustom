@@ -167,9 +167,6 @@ main {
     width: 100%; }
     main div.mySlider div img {
       width: 100%; }
-  main div.lead {
-    width: 100%;
-    height: 442px; }
   main div.teaser {
     padding: 5px;
     width: 50%;
@@ -325,7 +322,7 @@ iframe {
   nav .search-container {
     margin-top: 10px;
     float: right;
-    width: 250px; }
+    width: 20%; }
     nav .search-container input {
       width: 80%; }
     nav .search-container button {
@@ -360,8 +357,6 @@ iframe {
   /*  main  */
   main div.teaser {
     width: 33%; }
-  main div.lead {
-    height: 345px; }
   main .cruiseContainer {
     width: 100%; }
     main .cruiseContainer img {
