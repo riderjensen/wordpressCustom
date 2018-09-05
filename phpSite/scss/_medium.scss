@@ -9,7 +9,7 @@ nav {
 	.search-container {
 		margin-top: 10px;
 		float: right;
-		width: 250px;
+		width: 30%;
 
 		input {
 			width: 80%;
@@ -18,7 +18,7 @@ nav {
 		button {
 			padding: 5px;
 			float: right;
-			width: 45px;
+			width: 20%;
 		}
 	}
 
@@ -67,10 +67,6 @@ nav {
 main {
 	div.teaser {
 		width: 33%;
-	}
-
-	div.lead {
-		height: 310px;
 	}
 
 	.cruiseContainer {

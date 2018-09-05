@@ -61,7 +61,7 @@ header {
   font-weight: 800;
   max-width: 100%;
   margin: 0 auto;
-  height: 100px;
+  height: 105px;
   background-color: #333; }
   header div.head {
     max-width: 1200px;
@@ -73,21 +73,24 @@ header {
     font-size: 2rem;
     color: #FFF;
     position: absolute;
-    bottom: 60px;
+    top: 10px;
     left: 120px; }
   header h2 {
     font-size: 1.4rem;
     color: #FFF;
     position: absolute;
-    bottom: 30px;
+    top: 40px;
     left: 120px; }
   header a#phone {
+    font-size: 40px;
     position: absolute;
-    margin-top: 78px;
+    margin-top: 55px;
     right: 24px;
     color: white; }
   header img {
-    max-width: 100px; }
+    margin-left: 10px;
+    margin-top: 10px;
+    max-width: 80px; }
 
 /*  nav  */
 nav {
@@ -143,10 +146,15 @@ nav {
     display: block; }
   nav .search-container input {
     width: 80%;
-    padding: 5px; }
+    padding: 5px;
+    border-radius: 10px; }
   nav .search-container button {
-    width: 10%;
-    padding: 5px; }
+    width: 15%;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    border-color: #333; }
   nav .fa-bars {
     padding: 20px;
     float: left; }
@@ -173,7 +181,7 @@ main {
     float: left;
     position: relative; }
     main div.teaser span {
-      color: tomato;
+      color: #fff;
       position: absolute;
       display: block;
       text-align: center;
@@ -324,11 +332,11 @@ iframe {
     float: right;
     width: 20%; }
     nav .search-container input {
-      width: 80%; }
+      width: 72%; }
     nav .search-container button {
       padding: 5px;
       float: right;
-      width: 45px; }
+      width: 25%; }
   nav i.fa-bars {
     display: none; }
   nav ul#thisNav {

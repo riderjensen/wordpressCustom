@@ -41,9 +41,15 @@
 					</ul>
 				</li>
 				<li><a href="http://riderjensen.com/dgm3740/WordPress/book-a-cruise/">Book</a></li>
-				<li><a href="http://riderjensen.com/dgm3740/WordPress/location/">Location</a></li>
-				<li><a href="http://riderjensen.com/dgm3740/WordPress/about-us/">About Us</a></li>
-				<li><a href="http://riderjensen.com/dgm3740/WordPress/gallery/">Gallery</a></li>
+				<li></li>
+								<li class="dropDown"><a href="#"  style="    background: tomato;
+    background: -moz-linear-gradient(top, tomato 0%, #e02200 100%);
+    background: -webkit-linear-gradient(top, tomato 0%, #e02200 100%);
+    background: linear-gradient(to bottom, tomato 0%, #e02200 100%);">About</a>
+					<ul class="subNav">
+						<li><a href="http://riderjensen.com/dgm3740/WordPress/about-us/">About Us</a><a href="http://riderjensen.com/dgm3740/WordPress/gallery/">Gallery</a><a href="http://riderjensen.com/dgm3740/WordPress/location/">Location</a></li>
+					</ul>
+				</li>
 				<li><a href="http://riderjensen.com/dgm3740/WordPress/ournews/">News</a></li>
 			</ul>
 
