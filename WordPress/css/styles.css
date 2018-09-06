@@ -86,7 +86,8 @@ header {
     position: absolute;
     margin-top: 55px;
     right: 24px;
-    color: white; }
+    color: white;
+    text-decoration: none; }
   header img {
     margin-left: 10px;
     margin-top: 10px;
@@ -145,9 +146,10 @@ nav {
     float: none;
     display: block; }
   nav .search-container input {
-    width: 80%;
+    width: 75%;
     padding: 5px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    margin-left: 5%; }
   nav .search-container button {
     width: 15%;
     padding: 5px;
@@ -330,18 +332,17 @@ iframe {
   nav .search-container {
     margin-top: 10px;
     float: right;
-    width: 20%; }
-    nav .search-container input {
-      width: 72%; }
+    width: 30%; }
     nav .search-container button {
       padding: 5px;
       float: right;
-      width: 25%; }
+      width: 15%;
+      margin-right: 5%; }
   nav i.fa-bars {
     display: none; }
   nav ul#thisNav {
     float: none;
-    width: 100%; }
+    width: 97%; }
     nav ul#thisNav li {
       width: 12%;
       float: left; }
@@ -443,3 +444,5 @@ iframe {
 
   #why {
     width: 33%; } }
+
+/*# sourceMappingURL=styles.css.map */

@@ -54,6 +54,7 @@ header {
 		margin-top: 55px;
 		right: 24px;
 		color: white;
+		text-decoration: none;
 	}
 
 	img {
@@ -132,9 +133,10 @@ nav {
 	}
 
 	.search-container input {
-		width: 80%;
+		width: 75%;
 		padding: 5px;
 		border-radius: 10px;
+		margin-left: 5%;
 	}
 
 	.search-container button {

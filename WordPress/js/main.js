@@ -15,6 +15,15 @@ function resize() {
     }
 }
 
+if (window.outerWidth <= 559) {
+    let element = document.querySelector('#thisNav');
+    element.classList.add("hidden");
+}
+if (window.outerWidth > 559) {
+    const nav = document.getElementById('thisNav');
+    nav.classList.remove("hidden");
+}
+
 let urlString = document.location.href;
 let urlArray = urlString.split('/');
 let href = urlArray[urlArray.length - 2];

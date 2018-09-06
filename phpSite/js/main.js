@@ -4,13 +4,25 @@ function test() {
 }
 
 function resize() {
-    if (window.outerWidth > 560) {
+
+    if (window.outerWidth <= 559) {
         let element = document.querySelector('#thisNav');
-        if (element.classList.contains('hidden')) {
-            element.classList.remove("hidden");
-        }
+        element.classList.add("hidden");
+    }
+    if (window.outerWidth > 559) {
+        const nav = document.getElementById('thisNav');
+        nav.classList.remove("hidden");
     }
 }
+if (window.outerWidth <= 559) {
+    let element = document.querySelector('#thisNav');
+    element.classList.add("hidden");
+}
+if (window.outerWidth > 559) {
+    const nav = document.getElementById('thisNav');
+    nav.classList.remove("hidden");
+}
+
 
 let urlString = document.location.href;
 let urlArray = urlString.split('/');

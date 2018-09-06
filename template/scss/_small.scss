@@ -46,6 +46,7 @@ header {
 		position: absolute;
 		top: 40px;
 		left: 120px;
+		
 	}
 
 	a#phone {
@@ -54,6 +55,7 @@ header {
 		margin-top: 55px;
 		right: 24px;
 		color: white;
+		text-decoration: none;
 	}
 
 	img {
@@ -127,7 +129,8 @@ nav {
 	}
 
 	.search-container input {
-		width: 80%;
+		width: 75%;
+		margin-left: 5%;
 		padding: 5px;
 		border-radius: 10px;
 	}
