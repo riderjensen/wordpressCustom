@@ -174,7 +174,7 @@ main {
     main div.mySlider div img {
       width: 100%; }
   main div.teaser {
-    padding: 5px;
+    padding: 15px;
     width: 50%;
     float: left;
     position: relative; }
@@ -221,7 +221,8 @@ main {
         color: white; }
   main .agentInfo img {
     width: 100%;
-    float: right; }
+    float: right;
+    margin-bottom: 20px; }
   main .agentInfo p {
     margin-bottom: 15px; }
   main .bookCruise input {
