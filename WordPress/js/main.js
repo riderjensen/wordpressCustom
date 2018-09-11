@@ -1,28 +1,10 @@
-function test() {
-    const nav = document.getElementById('thisNav');
-    nav.classList.toggle("hidden");
+function toggleMenu() {
+    document.getElementById("hamburgerBtn").classList.toggle("open");
+    document.getElementById("primaryNav").classList.toggle("open");
 }
+var x = document.getElementById('hamburgerBtn');
+x.onclick = toggleMenu;
 
-function resize() {
-
-    if (window.outerWidth <= 559) {
-        let element = document.querySelector('#thisNav');
-        element.classList.add("hidden");
-    }
-    if (window.outerWidth > 559) {
-        const nav = document.getElementById('thisNav');
-        nav.classList.remove("hidden");
-    }
-}
-
-if (window.outerWidth <= 559) {
-    let element = document.querySelector('#thisNav');
-    element.classList.add("hidden");
-}
-if (window.outerWidth > 559) {
-    const nav = document.getElementById('thisNav');
-    nav.classList.remove("hidden");
-}
 
 let urlString = document.location.href;
 let urlArray = urlString.split('/');
@@ -40,9 +22,4 @@ if (href != '') {
     }
 } else {
     menu[0].className = "active";
-}
-
-let element = document.querySelector('#thisNav');
-if (element.classList.contains('hidden')) {
-    element.classList.remove("hidden");
 }

@@ -1,66 +1,29 @@
+/*  apply a natural box layout model to all elements  */
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	padding-top: 0px;
+}
+
+#hamburgerBtn {
+	display: none;
+}
+
 nav {
-	div {
-		a {
-			border-right: 1px solid rgba(0, 0, 0, 0.3);
-			float: left;
-		}
-	}
+	position: relative;
 
-	.search-container {
-		margin-top: 10px;
-        float: right;
-        width: 30%;
-
-		button {
-			padding: 5px;
-			float: right;
-			width: 15%;
-            margin-right:5%;
-
-		}
-	}
-
-	i.fa-bars {
-		display: none;
-	}
-
-	ul#thisNav {
-		float: none;
-		width: 97%;
-
+	ul#primaryNav {
 		li {
-			width: 12%;
 			float: left;
-
-			a {
-				width: 100%;
-			}
-
-			ul.subNav {
-				display: none;
-				float: none;
-
-				li {
-					float: none;
-					display: block;
-					position: absolute;
-					background-color: darken($primary-color, 10%);
-					min-width: 160px;
-					box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-					padding: 12px 16px;
-					z-index: 1;
-				}
-			}
-		}
-
-		li:hover {
-			ul.subNav {
-				display: block;
-			}
 		}
 	}
 }
 
+/* hide the navigation button by default */
 /*  main  */
 main {
 	div.teaser {

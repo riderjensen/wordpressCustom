@@ -14,6 +14,7 @@ html {
 body {
 	font-size: 1rem;
 	font-family: $font-stack;
+	padding-top: 44px;
 }
 
 /*  header  */
@@ -64,94 +65,86 @@ header {
 	}
 }
 
-/*  nav  */
 nav {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-	@include gradient($secondary-color, darken($secondary-color, 20%));
+	height: 2.75rem;
+	background-color: $secondary-color;
+}
 
-	div {
-		overflow: hidden;
-		max-width: 1200px;
-		margin: 0 auto;
+#hamburgerBtn {
+	display: block;
+	width: 7rem;
+	height: 2.75rem;
+	background-image: url('../img/menuOpenWhite.png');
+	background-color: rgba(0, 0, 0, 0.1);
+	background-position: 2vw center;
+	background-repeat: no-repeat;
+	border: 0 none;
+}
 
+#hamburgerBtn.open {
+	background: url('../img/menuCloseWhite.png');
+	background-position: 2vw center;
+	background-repeat: no-repeat;
+}
+
+#primaryNav {
+	height: 0;
+	overflow: hidden;
+	width: 20rem;
+	background-color: $primary-color;
+	margin: 0;
+	padding: 0;
+	z-index: 998;
+	font-family: Verdana;
+	font-weight: normal;
+
+	li.active {
 		a {
-			float: left;
+			background-color: rgba(0, 0, 0, 0.25);
+		}
+	}
+
+	li {
+		a {
 			display: block;
+			width: 100%;
+			padding: .75rem 2vw;
+			font-size: 14px;
+			text-shadow: -1px -1px 0 rgba(0, 0, 0, .15);
 			color: white;
-			text-align: center;
-			padding: 14px 16px;
 			text-decoration: none;
-			font-size: 15px;
-			font-weight: $boldWeight;
+			border-top: 1px solid rgba(0, 0, 0, .2);
 		}
 
 		a:hover {
-			background-color: $primary-color;
-			color: $secondary-color;
+			background-color: rgba(0, 0, 0, .5);
 		}
 
-		a:last-child {
-			border-right: none;
-		}
-	}
-
-	ul {
-		float: left;
-	}
-
-	#thisNav {
-		li {
-			float: left;
-			width: 100%;
+		ul {
+			display: none;
+			background: rgba(0, 0, 0, .3);
+			padding: 0;
 
 			a {
-				float: left;
-				width: 100%;
+				border-top: solid 1px rgba(0, 0, 0, 0.2);
+				font-size: 12px;
+				padding: 10px 5%;
+				font-weight: normal;
 			}
-
-			ul.subNav {
-				margin-left: 20px;
-				clear: both;
-				float: left;
-				background-color: $primary-color;
-
-				li {
-					float: left;
-				}
-			}
-		}
-
-		li.dropDown {
-			background-color: $primary-color;
 		}
 	}
 
-	.search-container {
-		width: 100%;
-		float: none;
+	li:hover ul {
 		display: block;
 	}
+}
 
-	.search-container input {
-		width: 75%;
-		padding: 5px;
-		border-radius: 10px;
-		margin-left: 5%;
-	}
-
-	.search-container button {
-		width: 15%;
-		padding: 5px;
-		border-radius: 10px;
-		background-color: $primary-color;
-		color: #fff;
-		border-color: $primary-color;
-	}
-
-	.fa-bars {
-		padding: 20px;
-		float: left;
-	}
+#primaryNav.open {
+	height: auto;
 }
 
 /*  main  */
@@ -234,6 +227,7 @@ main {
 			
 
 			button {
+				margin: 10px;
 				float: left;
 				background-color: $secondary-color;
 				padding: 10px;

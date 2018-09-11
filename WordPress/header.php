@@ -16,7 +16,7 @@
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
-<body onresize="resize()">
+<body>
 	<header>
 		<div class="head">
 			<img src="<?php echo get_template_directory_uri(); ?>/img/logo100.png" alt="logo" srcset="<?php echo get_template_directory_uri(); ?>/img/logo100.png 1x, <?php echo get_template_directory_uri(); ?>/img/logo200.png 2x, <?php echo get_template_directory_uri(); ?>/img/logo300.png 3x," />
@@ -26,39 +26,30 @@
 		</div>
 	</header>
 	
-	<nav class="clearfix">
-	<div class="topnav" id="myTopnav">
-			<i class="fa fa-bars" aria-hidden="true" onclick="test()"></i>
-			<ul class="hidden" id="thisNav">
-				<li><a class="notActive" href="http://riderjensen.com/dgm3740/WordPress/">Home</a></li>
-				<li><a href="http://riderjensen.com/dgm3740/WordPress/cruises/">Cruises</a></li>
-				<li class="dropDown"><a href="#"  style="    background: tomato;
-    background: -moz-linear-gradient(top, tomato 0%, #e02200 100%);
-    background: -webkit-linear-gradient(top, tomato 0%, #e02200 100%);
-    background: linear-gradient(to bottom, tomato 0%, #e02200 100%);">Agents</a>
-					<ul class="subNav">
-						<li><a href="http://riderjensen.com/dgm3740/WordPress/agent-anne-currie/">Anne Currie</a><a href="http://riderjensen.com/dgm3740/WordPress/agent-brooke-garnett/">Brooke Garnett</a><a href="http://riderjensen.com/dgm3740/WordPress/agent-tom-marchant/">Tom Marchant</a></li>
-					</ul>
-				</li>
-				<li><a href="http://riderjensen.com/dgm3740/WordPress/book-a-cruise/">Book</a></li>
-				<li></li>
-								<li class="dropDown"><a href="#"  style="    background: tomato;
-    background: -moz-linear-gradient(top, tomato 0%, #e02200 100%);
-    background: -webkit-linear-gradient(top, tomato 0%, #e02200 100%);
-    background: linear-gradient(to bottom, tomato 0%, #e02200 100%);">About</a>
-					<ul class="subNav">
-						<li><a href="http://riderjensen.com/dgm3740/WordPress/about-us/">About Us</a><a href="http://riderjensen.com/dgm3740/WordPress/gallery/">Gallery</a><a href="http://riderjensen.com/dgm3740/WordPress/location/">Location</a></li>
-					</ul>
-				</li>
-				<li><a href="http://riderjensen.com/dgm3740/WordPress/ournews/">News</a></li>
-			</ul>
 
-			<div class="search-container">
-				<input type="search" placeholder="Search..">
-				<button type="submit"><i class="fa fa-search"></i></button>
-			</div>
 
-		</div>
-	</nav>
+
+<nav class="clearfix">
+        <button id="hamburgerBtn"></button>
+		<ul id="primaryNav">
+			<li><a href="http://riderjensen.com/dgm3740/WordPress/">Home</a></li>
+			<li class="parent"><a href="#">Agents</a>
+				<ul>
+					<li><a href="http://riderjensen.com/dgm3740/WordPress/agent-anne-currie/">Anne Currie</a></li>
+					<li><a href="http://riderjensen.com/dgm3740/WordPress/agent-brooke-garnett/">Brooke Garnett</a></li>
+					<li><a href="http://riderjensen.com/dgm3740/WordPress/agent-tom-marchant/">Tom Marchant</a></li>
+				</ul>
+			</li>
+			<li><a href="http://riderjensen.com/dgm3740/WordPress/cruises/">Cruises</a>
+			<li class="parent active"><a href="#">About</a>
+            <ul>
+					<li><a href="http://riderjensen.com/dgm3740/WordPress/about-us/">About Us</a></li>
+					<li><a href="http://riderjensen.com/dgm3740/WordPress/gallery/">Gallery</a></li>
+					<li><a href="http://riderjensen.com/dgm3740/WordPress/location/">Location</a></li>
+				</ul></li>
+			<li><a href="http://riderjensen.com/dgm3740/WordPress/book-a-cruise/">Book</a></li>
+			<li><a href="http://riderjensen.com/dgm3740/WordPress/ournews/">News</a></li>
+		</ul>
+        </nav>
 	<main class="clearfix">
 
