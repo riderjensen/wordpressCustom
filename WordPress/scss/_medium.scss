@@ -72,10 +72,12 @@ main {
 
 		img {
 			width: 33%;
-			display: inline-block;
+			display: block;
+    		float: left;
 		}
 
 		.info-container {
+			padding-left: 30px;
 			width: 66%;
 			display: inline-block;
 

@@ -10,7 +10,8 @@ include 'header.php';
 				<h2>Antarctica Cruises from $999</h2>
 				<p>Sail to distant Antarctica on this 12-day Antarctica cruise. View the abundant wildlife which call this frozen
 					continent home. Cross the Drake Passage and spot albatrosses, prions, petrels, penguins, seals, whales, and
-					dolphins as you explore the Antarctic Peninsula from the comfort of the Hebridean Sky.</p>
+					dolphins as you explore the Antarctic Peninsula from the comfort of the Hebridean Sky. The view is immpossible to beat 
+					and we are offering great discounts all year! Mark this continent off of your bucket list with our easy and comfortable ctruise.</p>
 				<button>Read More</button>
 			</div>
 		</div>
