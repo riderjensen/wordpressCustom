@@ -17,8 +17,47 @@ nav {
 	position: relative;
 
 	ul#primaryNav {
+		margin: auto;
+		max-width: 1139px;
+		overflow: visible;
+		width: 100%;
+
 		li {
 			float: left;
+			display: relative;
+
+			ul {
+				display: none;
+				z-index: 100;
+
+				li {
+					float: left;
+					width: 100%;
+				}
+			}
+		}
+
+		li:hover {
+			ul {
+				display: block;
+				position: absolute;
+			}
+		}
+	}
+
+	.search-container {
+		margin-top: 5px;
+		float: right;
+		width: 28%;
+		position: relative;
+		right: 0;
+		top: 0;
+
+		button {
+			padding: 5px;
+			float: right;
+			width: 15%;
+			margin-right: 5%;
 		}
 	}
 }
@@ -36,7 +75,7 @@ main {
 		img {
 			width: 33%;
 			display: block;
-    		float: left;
+			float: left;
 		}
 
 		.info-container {

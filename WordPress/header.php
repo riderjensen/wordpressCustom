@@ -33,7 +33,7 @@
         <button id="hamburgerBtn"></button>
 		<ul id="primaryNav">
 			<li><a href="http://riderjensen.com/dgm3740/WordPress/">Home</a></li>
-			<li class="parent"><a href="#">Agents</a>
+			<li class="parent"><a href="#id">Agents</a>
 				<ul>
 					<li><a href="http://riderjensen.com/dgm3740/WordPress/agent-anne-currie/">Anne Currie</a></li>
 					<li><a href="http://riderjensen.com/dgm3740/WordPress/agent-brooke-garnett/">Brooke Garnett</a></li>
@@ -41,7 +41,7 @@
 				</ul>
 			</li>
 			<li><a href="http://riderjensen.com/dgm3740/WordPress/cruises/">Cruises</a>
-			<li class="parent active"><a href="#">About</a>
+			<li class="parent"><a href="#id">About</a>
             <ul>
 					<li><a href="http://riderjensen.com/dgm3740/WordPress/about-us/">About Us</a></li>
 					<li><a href="http://riderjensen.com/dgm3740/WordPress/gallery/">Gallery</a></li>
@@ -49,7 +49,12 @@
 				</ul></li>
 			<li><a href="http://riderjensen.com/dgm3740/WordPress/book-a-cruise/">Book</a></li>
 			<li><a href="http://riderjensen.com/dgm3740/WordPress/ournews/">News</a></li>
+			<div class="search-container">
+				<input type="search" placeholder="Search..">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</div>
 		</ul>
+		
         </nav>
 	<main class="clearfix">
 
