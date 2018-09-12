@@ -265,12 +265,20 @@ main {
       float: right;
       width: 100%;
       padding: 15px;
-      margin-bottom: 10px; }
+	  margin-bottom: 10px; }
+	  main .news-title{
+		color: tomato;
+	  }
+	  main .news-title a{
+		color: tomato;
+	  }
   main .news-content-excerpt {
     padding: 10px;
     margin-bottom: 40px; }
     main .news-content-excerpt a {
-      margin-bottom: 20px; }
+	  margin-bottom: 20px; 
+		color: tomato;	
+	}
     main .news-content-excerpt img {
       margin: 20px; }
 
