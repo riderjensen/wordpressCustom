@@ -40,8 +40,8 @@ $root = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_
 
 
 <nav class="clearfix">
-        <button id="hamburgerBtn"></button>
-		<ul id="primaryNav">
+       <button id="hamburgerBtn"></button>
+		 <!-- <ul id="primaryNav">
 			<li><a href="http://riderjensen.com/dgm3740/WordPress/">Home</a></li>
 			<li class="parent"><a href="#id">Agents</a>
 				<ul>
@@ -63,8 +63,9 @@ $root = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_
 				<input type="search" placeholder="Search..">
 				<button type="submit"><i class="fa fa-search"></i></button>
 			</div>
-		</ul>
-		
+		</ul> --->
+		<?php wp_nav_menu(); ?>
         </nav>
+		
 	<main class="clearfix">
 
