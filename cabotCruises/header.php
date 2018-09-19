@@ -22,7 +22,7 @@ $root = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/slick/slick-theme.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Alegreya:400,800" rel="stylesheet">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.15.2/lazyload.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/lazyload.min.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
